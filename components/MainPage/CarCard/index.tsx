@@ -41,6 +41,9 @@ export const CarCard = (props: {
   id: number;
 }) => {
   const router = useRouter();
+
+  const carImagePath = `/cars/${props.image}`;
+
   return (
     <CarCardGradient onClick={() => router.push('/car/' + props.id)}>
       <CarCardContainer>
@@ -49,7 +52,14 @@ export const CarCard = (props: {
           <ThreeDots size={30} />
         </CardData>
         <ImageContainer>
-          <CarImage src={props.image} />
+          <CarImage
+            placeholder='blur'
+            blurDataURL={carImagePath}
+            layout='intrinsic'
+            width={260}
+            height={100}
+            src={carImagePath}
+          />
         </ImageContainer>
         <CardData>
           <HiddenMessage size={1}>Book Now</HiddenMessage>

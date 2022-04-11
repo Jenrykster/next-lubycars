@@ -1,4 +1,5 @@
 import { BsThreeDots } from 'react-icons/bs';
+import Image from 'next/image';
 import styled from 'styled-components';
 
 export const CardData = styled.div`
@@ -44,7 +45,7 @@ export const ImageContainer = styled.div`
   align-items: center;
   height: 100%;
 `;
-export const CarImage = styled.img`
+export const CarImage = styled(Image)`
   width: 95%;
   align-items: center;
   transition: 0.15s ease-in-out;
@@ -78,14 +79,14 @@ export const CarCardContainer = styled.div`
   opacity: 95%;
   border-radius: 20px;
   padding: 0.9rem 1.15rem;
-  transition: all 0.4s ease-in-out;
+  transition: all 0.2s ease-in-out;
   &:hover {
     cursor: pointer;
     background-color: transparent;
     opacity: 100%;
 
     ${CarImage} {
-      transform: scale(1.05);
+      transform: scale(1.02);
     }
 
     ${HiddenMessage} {

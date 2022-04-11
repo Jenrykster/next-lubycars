@@ -1,0 +1,396 @@
+{
+  "cars": [
+    {
+      "id": 1,
+      "brand": "Alfa Romeo",
+      "logo": "./alfa-romeo/logo.png",
+      "colors": [
+        {
+          "id": 1,
+          "color": "Red",
+          "pics": ["./ferrari/colors/red.png", "./ferrari/colors/red-big.png"]
+        },
+        {
+          "id": 2,
+          "color": "Yellow",
+          "pics": [
+            "./ferrari/colors/yellow.png",
+            "./ferrari/colors/yellow-big.png"
+          ]
+        },
+        {
+          "id": 3,
+          "color": "Gray",
+          "pics": ["./ferrari/colors/gray.png", "./ferrari/colors/gray-big.png"]
+        }
+      ],
+      "model": "4C Spider",
+      "picture": "alfa-romeo/4c-spider.png",
+      "price": 825
+    },
+    {
+      "id": 2,
+      "brand": "Bentley",
+      "logo": "./bentley/logo.png",
+      "colors": [
+        {
+          "id": 1,
+          "color": "Red",
+          "pics": ["./ferrari/colors/red.png", "./ferrari/colors/red-big.png"]
+        },
+        {
+          "id": 2,
+          "color": "Yellow",
+          "pics": [
+            "./ferrari/colors/yellow.png",
+            "./ferrari/colors/yellow-big.png"
+          ]
+        },
+        {
+          "id": 3,
+          "color": "Gray",
+          "pics": ["./ferrari/colors/gray.png", "./ferrari/colors/gray-big.png"]
+        }
+      ],
+      "model": "CONTINENTAL GT",
+      "picture": "bentley/continental-gt.png",
+      "price": 825
+    },
+    {
+      "id": 3,
+      "brand": "BMW",
+      "logo": "./bmw/logo.png",
+      "colors": [
+        {
+          "id": 1,
+          "color": "Red",
+          "pics": ["./ferrari/colors/red.png", "./ferrari/colors/red-big.png"]
+        },
+        {
+          "id": 2,
+          "color": "Yellow",
+          "pics": [
+            "./ferrari/colors/yellow.png",
+            "./ferrari/colors/yellow-big.png"
+          ]
+        },
+        {
+          "id": 3,
+          "color": "Gray",
+          "pics": ["./ferrari/colors/gray.png", "./ferrari/colors/gray-big.png"]
+        }
+      ],
+      "model": "M1 COMPETITION",
+      "picture": "bmw/m1-competition.png",
+      "price": 825
+    },
+    {
+      "id": 4,
+      "brand": "Bugatti",
+      "logo": "./bugatti/logo.png",
+      "colors": [
+        {
+          "id": 1,
+          "color": "Red",
+          "pics": ["./ferrari/colors/red.png", "./ferrari/colors/red-big.png"]
+        },
+        {
+          "id": 2,
+          "color": "Yellow",
+          "pics": [
+            "./ferrari/colors/yellow.png",
+            "./ferrari/colors/yellow-big.png"
+          ]
+        },
+        {
+          "id": 3,
+          "color": "Gray",
+          "pics": ["./ferrari/colors/gray.png", "./ferrari/colors/gray-big.png"]
+        }
+      ],
+      "model": "VEYRON SPYDER",
+      "picture": "bugatti/veyron-spyder.png",
+      "price": 925
+    },
+    {
+      "id": 5,
+      "brand": "Chevrolet",
+      "logo": "./chevrolet/logo.png",
+      "colors": [
+        {
+          "id": 1,
+          "color": "Red",
+          "pics": ["./ferrari/colors/red.png", "./ferrari/colors/red-big.png"]
+        },
+        {
+          "id": 2,
+          "color": "Yellow",
+          "pics": [
+            "./ferrari/colors/yellow.png",
+            "./ferrari/colors/yellow-big.png"
+          ]
+        },
+        {
+          "id": 3,
+          "color": "Gray",
+          "pics": ["./ferrari/colors/gray.png", "./ferrari/colors/gray-big.png"]
+        }
+      ],
+      "model": "CORVETT",
+      "picture": "chevrolet/corvett.png",
+      "price": 925
+    },
+    {
+      "id": 6,
+      "brand": "Ferrari",
+      "logo": "./ferrari/logo.png",
+      "colors": [
+        {
+          "id": 1,
+          "color": "Red",
+          "pics": ["./ferrari/colors/red.png", "./ferrari/colors/red-big.png"]
+        },
+        {
+          "id": 2,
+          "color": "Yellow",
+          "pics": [
+            "./ferrari/colors/yellow.png",
+            "./ferrari/colors/yellow-big.png"
+          ]
+        },
+        {
+          "id": 3,
+          "color": "Gray",
+          "pics": ["./ferrari/colors/gray.png", "./ferrari/colors/gray-big.png"]
+        }
+      ],
+      "model": "CALIFORNIA",
+      "picture": "ferrari/california.png",
+      "price": 725
+    },
+    {
+      "id": 7,
+      "brand": "Lamborghini",
+      "logo": "./lamborghini/logo.png",
+      "colors": [
+        {
+          "id": 1,
+          "color": "Red",
+          "pics": ["./ferrari/colors/red.png", "./ferrari/colors/red-big.png"]
+        },
+        {
+          "id": 2,
+          "color": "Yellow",
+          "pics": [
+            "./ferrari/colors/yellow.png",
+            "./ferrari/colors/yellow-big.png"
+          ]
+        },
+        {
+          "id": 3,
+          "color": "Gray",
+          "pics": ["./ferrari/colors/gray.png", "./ferrari/colors/gray-big.png"]
+        }
+      ],
+      "model": "AVENTADOR",
+      "picture": "lamborghini/aventador.png",
+      "price": 925
+    },
+    {
+      "id": 8,
+      "brand": "Mclaren",
+      "logo": "./mclaren/logo.png",
+      "colors": [
+        {
+          "id": 1,
+          "color": "Red",
+          "pics": ["./ferrari/colors/red.png", "./ferrari/colors/red-big.png"]
+        },
+        {
+          "id": 2,
+          "color": "Yellow",
+          "pics": [
+            "./ferrari/colors/yellow.png",
+            "./ferrari/colors/yellow-big.png"
+          ]
+        },
+        {
+          "id": 3,
+          "color": "Gray",
+          "pics": ["./ferrari/colors/gray.png", "./ferrari/colors/gray-big.png"]
+        }
+      ],
+      "model": "P1 GTR",
+      "picture": "mclaren/p1gtr.png",
+      "price": 925
+    },
+    {
+      "id": 9,
+      "brand": "Mercedes Benz",
+      "logo": "./mercedes-benz/logo.png",
+      "colors": [
+        {
+          "id": 1,
+          "color": "Red",
+          "pics": ["./ferrari/colors/red.png", "./ferrari/colors/red-big.png"]
+        },
+        {
+          "id": 2,
+          "color": "Yellow",
+          "pics": [
+            "./ferrari/colors/yellow.png",
+            "./ferrari/colors/yellow-big.png"
+          ]
+        },
+        {
+          "id": 3,
+          "color": "Gray",
+          "pics": ["./ferrari/colors/gray.png", "./ferrari/colors/gray-big.png"]
+        }
+      ],
+      "model": "AMG GTS",
+      "picture": "mercedes-benz/amg-gts.png",
+      "price": 725
+    },
+    {
+      "id": 10,
+      "brand": "Porsche",
+      "logo": "./porsche/logo.png",
+      "colors": [
+        {
+          "id": 1,
+          "color": "Red",
+          "pics": ["./ferrari/colors/red.png", "./ferrari/colors/red-big.png"]
+        },
+        {
+          "id": 2,
+          "color": "Yellow",
+          "pics": [
+            "./ferrari/colors/yellow.png",
+            "./ferrari/colors/yellow-big.png"
+          ]
+        },
+        {
+          "id": 3,
+          "color": "Gray",
+          "pics": ["./ferrari/colors/gray.png", "./ferrari/colors/gray-big.png"]
+        }
+      ],
+      "model": "911 GT3 RS",
+      "picture": "porsche/911-gt3-rs.png",
+      "price": 825
+    },
+    {
+      "id": 11,
+      "brand": "Porsche",
+      "logo": "./porsche/logo.png",
+      "colors": [
+        {
+          "id": 1,
+          "color": "Red",
+          "pics": ["./ferrari/colors/red.png", "./ferrari/colors/red-big.png"]
+        },
+        {
+          "id": 2,
+          "color": "Yellow",
+          "pics": [
+            "./ferrari/colors/yellow.png",
+            "./ferrari/colors/yellow-big.png"
+          ]
+        },
+        {
+          "id": 3,
+          "color": "Gray",
+          "pics": ["./ferrari/colors/gray.png", "./ferrari/colors/gray-big.png"]
+        }
+      ],
+      "model": "911 TURBO S",
+      "picture": "porsche/911-turbo-s.png",
+      "price": 725
+    },
+    {
+      "id": 12,
+      "brand": "Porsche",
+      "logo": "./porsche/logo.png",
+      "colors": [
+        {
+          "id": 1,
+          "color": "Red",
+          "pics": ["./ferrari/colors/red.png", "./ferrari/colors/red-big.png"]
+        },
+        {
+          "id": 2,
+          "color": "Yellow",
+          "pics": [
+            "./ferrari/colors/yellow.png",
+            "./ferrari/colors/yellow-big.png"
+          ]
+        },
+        {
+          "id": 3,
+          "color": "Gray",
+          "pics": ["./ferrari/colors/gray.png", "./ferrari/colors/gray-big.png"]
+        }
+      ],
+      "model": "911 TURBO S",
+      "picture": "porsche/911-turbo-s-orange.png",
+      "price": 725
+    },
+    {
+      "id": 13,
+      "brand": "Porsche",
+      "logo": "./porsche/logo.png",
+      "colors": [
+        {
+          "id": 1,
+          "color": "Red",
+          "pics": ["./ferrari/colors/red.png", "./ferrari/colors/red-big.png"]
+        },
+        {
+          "id": 2,
+          "color": "Yellow",
+          "pics": [
+            "./ferrari/colors/yellow.png",
+            "./ferrari/colors/yellow-big.png"
+          ]
+        },
+        {
+          "id": 3,
+          "color": "Gray",
+          "pics": ["./ferrari/colors/gray.png", "./ferrari/colors/gray-big.png"]
+        }
+      ],
+      "model": "911 TURBO S",
+      "picture": "porsche/911-turbo-s-gray.png",
+      "price": 725
+    },
+    {
+      "id": 14,
+      "brand": "Rolls-Royce",
+      "logo": "./rolls-royce/logo.png",
+      "colors": [
+        {
+          "id": 1,
+          "color": "Red",
+          "pics": ["./ferrari/colors/red.png", "./ferrari/colors/red-big.png"]
+        },
+        {
+          "id": 2,
+          "color": "Yellow",
+          "pics": [
+            "./ferrari/colors/yellow.png",
+            "./ferrari/colors/yellow-big.png"
+          ]
+        },
+        {
+          "id": 3,
+          "color": "Gray",
+          "pics": ["./ferrari/colors/gray.png", "./ferrari/colors/gray-big.png"]
+        }
+      ],
+      "model": "WRAITH",
+      "picture": "rolls-royce/wraith.png",
+      "price": 725
+    }
+  ]
+}
