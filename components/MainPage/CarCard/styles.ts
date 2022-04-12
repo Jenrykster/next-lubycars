@@ -44,6 +44,7 @@ export const ImageContainer = styled.div`
   display: flex;
   align-items: center;
   height: 100%;
+  padding: 0.3rem;
 `;
 export const CarImage = styled(Image)`
   width: 95%;

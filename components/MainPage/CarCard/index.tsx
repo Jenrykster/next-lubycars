@@ -55,9 +55,10 @@ export const CarCard = (props: {
           <CarImage
             placeholder='blur'
             blurDataURL={carImagePath}
-            layout='intrinsic'
-            width={260}
-            height={100}
+            layout='fixed'
+            objectFit='contain'
+            width={220}
+            height={104}
             src={carImagePath}
           />
         </ImageContainer>
