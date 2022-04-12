@@ -1,0 +1,1 @@
+export { ColorCarousel } from './ColorCarousel';
