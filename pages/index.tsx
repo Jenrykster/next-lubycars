@@ -1,11 +1,17 @@
-import { CarGrid } from '@components';
-import type { GetStaticProps, NextPage } from 'next';
 import { useEffect, useState } from 'react';
-import { Car } from 'shared/types';
+import type { GetStaticProps, NextPage } from 'next';
+import { animateScroll } from 'react-scroll';
+import { Car } from '@types';
+import { CarGrid } from '@components';
+
 import { MainPageContainer, ScrollBackButton } from './styles';
 
 const Home: NextPage<{ cars: Car[] }> = (props: { cars: Car[] }) => {
   const [showScrollBackButton, setShowScrollBackButton] = useState(false);
+
+  const scrollToTop = () => {
+    animateScroll.scrollToTop();
+  };
 
   useEffect(() => {
     const changeScrollPercentage = () => {
@@ -34,7 +40,11 @@ const Home: NextPage<{ cars: Car[] }> = (props: { cars: Car[] }) => {
   return (
     <MainPageContainer>
       <CarGrid cars={props.cars} />
-      <ScrollBackButton size={70} showScrollButton={showScrollBackButton} />
+      <ScrollBackButton
+        size={70}
+        showScrollButton={showScrollBackButton}
+        onClick={scrollToTop}
+      />
     </MainPageContainer>
   );
 };
