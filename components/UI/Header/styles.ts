@@ -120,7 +120,7 @@ export const DateContainer = styled.div`
   flex-direction: row;
   width: 44%;
   justify-content: space-between;
-  @media (max-width: 1100px) {
+  @media (max-width: 500px) {
     width: 60%;
   }
 `;
