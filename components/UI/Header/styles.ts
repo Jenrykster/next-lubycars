@@ -82,6 +82,11 @@ export const SearchButton = styled(IoSearchSharp)`
   border-radius: 50%;
   padding: 0.2rem;
 
+  &:hover {
+    cursor: pointer;
+    transition: 0.3s all ease-in-out;
+    transform: rotate(360deg) scale(1.1);
+  }
   @media (max-width: 500px) {
     display: none;
   }
@@ -107,7 +112,7 @@ export const Button = styled.button<{ border?: boolean }>`
   font-weight: 600;
   font-size: 0.9rem;
   background-color: transparent;
-
+  transition: 0.1s all ease-in;
   &:hover {
     cursor: pointer;
     color: ${(props) => (props.border ? 'white' : '#7B89F4')};

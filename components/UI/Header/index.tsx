@@ -45,7 +45,7 @@ export const Header = () => {
           <SearchField icon='IoCalendarSharp' label='11/03/2021' />
           <SearchField icon='IoCalendarSharp' label='12/12/2021' />
         </DateContainer>
-        <SearchButton size={21} />
+        <SearchButton size={25} />
       </SearchBarContainer>
       <ButtonContainer>
         <Button>Sign up</Button>
