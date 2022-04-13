@@ -13,7 +13,7 @@ export const MainPageContainer = styled.div`
 `;
 
 export const ScrollBackButton = styled(MdKeyboardArrowUp)<{
-  showScrollButton: boolean;
+  visible: string;
 }>`
   path {
     color: white;
@@ -24,8 +24,9 @@ export const ScrollBackButton = styled(MdKeyboardArrowUp)<{
   background-color: #e6d3f1;
   border-radius: 50%;
   transition: 0.2s all ease-in-out;
-  transform: ${(props) => (props.showScrollButton ? 'scale(1)' : 'scale(0.0)')};
-  opacity: ${(props) => (props.showScrollButton ? '100%' : '0%')};
+  transform: ${(props) =>
+    props.visible === 'true' ? 'scale(1)' : 'scale(0.0)'};
+  opacity: ${(props) => (props.visible === 'true' ? '100%' : '0%')};
   &:hover {
     cursor: pointer;
     background-color: #e1d1e2;
