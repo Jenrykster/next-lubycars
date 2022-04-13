@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import styled from 'styled-components';
 
 export const CarDetailContainer = styled.div`
@@ -74,8 +75,8 @@ export const ColorInfoContainer = styled.div<{ transitioning?: boolean }>`
 export const CarInformationBody = styled.div`
   display: flex;
   margin-top: -6.2rem;
-  padding-right: 10rem;
-  width: 75%;
+  padding-right: 12.5rem;
+  width: 90%;
   align-items: center;
 
   @media (max-width: 1100px) {
@@ -91,28 +92,38 @@ export const CarInformationBody = styled.div`
   }
 `;
 
-export const CarPicture = styled.img<{ transitioning?: boolean }>`
-  transition: 0.5s ease;
-  width: auto;
+export const CarPictureContainer = styled.div`
+  width: 60%;
   margin-left: auto;
   margin-right: auto;
-  height: 250px;
+  height: 260px;
   min-width: 200px;
   min-height: 150px;
-  opacity: ${(props) => (props.transitioning ? '0%' : '100%')};
   @media (max-width: 1100px) {
-    height: 220px;
+    height: 240px;
+    width: 65%;
+  }
+  @media (max-width: 1000px) {
+    margin-top: 40px;
+    height: 190px;
   }
   @media (max-width: 800px) {
-    height: 60px;
+    height: 50px;
+    margin-top: 0;
+    width: 100%;
+    margin-right: -80px;
   }
   @media (max-width: 600px) {
-    width: 100%;
+    width: 120%;
     height: 150px;
     min-width: 250px;
     min-height: 125px;
-    margin-right: -60px;
+    margin-right: -90px;
   }
+`;
+export const CarPicture = styled(Image)<{ transitioning?: boolean }>`
+  transition: 0.5s ease;
+  opacity: ${(props) => (props.transitioning ? '0%' : '100%')};
 `;
 
 const ContainerBase = styled.div`
@@ -138,21 +149,55 @@ const ContainerBase = styled.div`
 
 export const GoBackButtonContainer = styled(ContainerBase)<{}>`
   border: 1px solid #313136;
+  margin-right: auto;
+  width: 20%;
+  white-space: nowrap;
   &:hover {
     background-color: #313136;
   }
   @media (max-width: 600px) {
     display: none;
   }
+  @media (max-width: 700px) and (min-width: 601px) {
+    width: 50%;
+    margin-left: -75px;
+  }
+  @media (max-width: 800px) and (min-width: 701px) {
+    width: 35%;
+    margin-left: -15px;
+  }
+  @media (max-width: 1000ox) and (min-width: 801px) {
+    width: 30%;
+  }
 `;
 export const BookButtonContainer = styled(ContainerBase)`
   background-color: #313136;
   margin-right: 5rem;
+  width: 13%;
   &:hover {
     filter: brightness(0.8);
   }
   @media (max-width: 800px) {
     margin-right: 1.5rem;
+  }
+  @media (max-width: 1100px) {
+    width: 15%;
+  }
+  @media (max-width: 400px) {
+    width: 50%;
+  }
+  @media (max-width: 600px) and (min-width: 401px) {
+    width: 35%;
+  }
+  @media (max-width: 700px) and (min-width: 601px) {
+    width: 30%;
+  }
+  @media (max-width: 800px) and (min-width: 701px) {
+    width: 20%;
+  }
+  @media (max-width: 1100px) and (min-width: 801px) {
+    margin-right: 2.5rem;
+    width: 18%;
   }
 `;
 export const ButtonText = styled.p<{ color: string }>`

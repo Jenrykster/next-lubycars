@@ -14,6 +14,7 @@ import {
   ButtonText,
   GoBackButtonContainer,
   BookButtonContainer,
+  CarPictureContainer,
 } from './styles';
 
 import { TransitionWrapper, ColorCarousel } from '@components';
@@ -98,7 +99,16 @@ const CarDetail: NextPage<{ selectedCar: Car }> = (props: {
             <BsArrowLeft />
             <ButtonText color='#313136'>Back to catalog</ButtonText>
           </GoBackButtonContainer>
-          <CarPicture src={actualCarImage} transitioning={isTransitioning} />
+          <CarPictureContainer>
+            <CarPicture
+              src={actualCarImage}
+              transitioning={isTransitioning}
+              layout='responsive'
+              objectFit='contain'
+              width={783}
+              height={408}
+            />
+          </CarPictureContainer>
         </CarInformationBody>
         <BookButtonContainer
           onClick={() => alert('Booked car ' + props.selectedCar?.model)}
