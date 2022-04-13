@@ -1,7 +1,5 @@
-import path from 'path';
-import fs from 'fs';
-
 import { NextApiRequest, NextApiResponse } from 'next';
+import { loadCarData } from '@lib';
 
 const handler = (req: NextApiRequest, res: NextApiResponse) => {
   if (req.method !== 'GET') {
@@ -9,9 +7,7 @@ const handler = (req: NextApiRequest, res: NextApiResponse) => {
   }
 
   try {
-    const carDataPath = path.join(process.cwd(), 'data', 'cars.json');
-    const carsJSON = fs.readFileSync(carDataPath);
-    const carData = JSON.parse(carsJSON.toString());
+    const carData = loadCarData();
     res.status(200).json({ message: 'Ok', data: carData });
   } catch (error) {
     res.status(400).json({ message: error });
