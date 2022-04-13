@@ -42,7 +42,7 @@ const Home: NextPage<{ cars: Car[] }> = (props: { cars: Car[] }) => {
       <CarGrid cars={props.cars} />
       <ScrollBackButton
         size={70}
-        showScrollButton={showScrollBackButton}
+        visible={showScrollBackButton.toString()}
         onClick={scrollToTop}
       />
     </MainPageContainer>
