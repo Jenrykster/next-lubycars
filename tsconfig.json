@@ -5,7 +5,8 @@
       "@components": ["./components"],
       "@pages": ["./pages"],
       "@types": ["./shared/types/"],
-      "@lib": ["./shared/lib/"]
+      "@lib": ["./shared/lib/"],
+      "@animations/*": ["./animations/*"]
     },
     "target": "es5",
     "lib": ["dom", "dom.iterable", "esnext"],

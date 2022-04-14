@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import Lottie, { Options } from 'react-lottie';
 
-import * as carAnimation from '../../public/animations/car-animation.json';
+import * as carAnimation from '@animations/car-animation.json';
 import { ErrorSubtitle, ErrorTitle, ErrorViewContainer } from './styles';
 export const ErrorView = () => {
   const isClient = typeof window !== 'undefined';
