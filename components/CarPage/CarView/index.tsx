@@ -49,7 +49,7 @@ export const CarView = (props: { selectedCar: Car }) => {
     props.selectedCar?.colors[1]
   );
   const [actualCarImage, setActualCarImage] = useState(
-    '/cars/' + selectedColor!.pics[1]
+    `/cars/${selectedColor!.pics[1]}`
   );
   const [isTransitioning, setIsTransitioning] = useState(false);
 
