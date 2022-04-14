@@ -104,6 +104,8 @@ export const CarView = (props: { selectedCar: Car }) => {
               objectFit='contain'
               width={783}
               height={408}
+              placeholder='blur'
+              blurDataURL={actualCarImage}
             />
           </CarPictureContainer>
         </CarInformationBody>
