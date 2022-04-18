@@ -36,6 +36,7 @@ const SearchField = (props: { label: string; icon: keyof typeof Icons }) => {
 };
 
 export const Header = () => {
+  const router = useRouter();
   return (
     <HeaderContainer>
       <Title />
@@ -48,8 +49,10 @@ export const Header = () => {
         <SearchButton size={25} />
       </SearchBarContainer>
       <ButtonContainer>
-        <Button>Sign up</Button>
-        <Button border>Sign in</Button>
+        <Button onClick={() => router.push('/signup')}>Sign up</Button>
+        <Button onClick={() => router.push('/login')} border>
+          Sign in
+        </Button>
       </ButtonContainer>
     </HeaderContainer>
   );

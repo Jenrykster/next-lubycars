@@ -2,14 +2,18 @@ import { useEffect, useState } from 'react';
 import Lottie, { Options } from 'react-lottie';
 
 import * as carAnimation from '@animations/car-animation.json';
+
 import { ErrorSubtitle, ErrorTitle, ErrorViewContainer } from './styles';
-export const ErrorView = (props: { title: string; subtitle: string }) => {
+export const ErrorView = (props: {
+  title: string;
+  subtitle: string;
+  animationData?: object;
+}) => {
   const isClient = typeof window !== 'undefined';
   const [screenSize, getDimension] = useState({
     dynamicWidth: isClient ? window.innerWidth : 800,
     dynamicHeight: isClient ? window.innerHeight : 800,
   });
-
   const setDimension = () => {
     getDimension({
       dynamicWidth: window.innerWidth,
@@ -26,7 +30,7 @@ export const ErrorView = (props: { title: string; subtitle: string }) => {
   }, [screenSize]);
 
   const defaultOptions: Options = {
-    animationData: carAnimation,
+    animationData: props.animationData || carAnimation,
     autoplay: true,
     loop: true,
     rendererSettings: {
@@ -41,7 +45,7 @@ export const ErrorView = (props: { title: string; subtitle: string }) => {
       <Lottie
         isClickToPauseDisabled={true}
         options={defaultOptions}
-        height={200}
+        height={250}
         width={animationWidth}
       />
       <ErrorSubtitle>{props.subtitle}</ErrorSubtitle>
