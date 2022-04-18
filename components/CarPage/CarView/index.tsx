@@ -103,7 +103,9 @@ export const CarView = (props: { selectedCar: Car }) => {
               onLoad={() => setIsLoadingImage(true)}
               onLoadingComplete={() => setIsLoadingImage(false)}
               src={actualCarImage}
-              transitioning={isTransitioning || isLoadingImage}
+              transitioning={
+                isTransitioning || isLoadingImage ? 'true' : 'false'
+              }
               layout='responsive'
               objectFit='contain'
               width={783}

@@ -121,9 +121,9 @@ export const CarPictureContainer = styled.div`
     margin-right: -90px;
   }
 `;
-export const CarPicture = styled(Image)<{ transitioning?: boolean }>`
+export const CarPicture = styled(Image)<{ transitioning?: string }>`
   transition: 0.5s ease;
-  opacity: ${(props) => (props.transitioning ? '0%' : '100%')};
+  opacity: ${(props) => (props.transitioning === 'true' ? '0%' : '100%')};
 `;
 
 const ContainerBase = styled.div`
