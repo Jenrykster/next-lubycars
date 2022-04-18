@@ -36,6 +36,10 @@ export const CarInfoContainer = styled.div`
 export const CarLogo = styled.img`
   width: 25%;
   margin: 1rem;
+
+  @media (min-width: 1101px) and (max-width: 3000px) {
+    width: 200px;
+  }
 `;
 
 export const BoldText = styled.p<{ size: number }>`
@@ -43,6 +47,10 @@ export const BoldText = styled.p<{ size: number }>`
   font-weight: 700;
   font-size: ${(props) => props.size + 'rem'};
   margin: 0;
+
+  @media (min-width: 1101px) and (max-width: 3000px) {
+    font-size: ${(props) => props.size / 0.4 + 'rem'};
+  }
   @media (max-width: 1100px) {
     font-size: ${(props) => props.size / 1.4 + 'rem'};
   }
@@ -53,6 +61,10 @@ export const LightText = styled.p<{ size?: string }>`
   font-weight: 300;
   font-size: ${(props) => (props.size ? props.size : '2rem')};
   margin: 0;
+  @media (min-width: 1101px) and (max-width: 3000px) {
+    font-size: ${(props) =>
+      props.size ? parseInt(props.size) / 0.4 + 'rem' : '3rem'};
+  }
 `;
 
 export const ColorInfoContainer = styled.div<{ transitioning?: boolean }>`
@@ -99,6 +111,11 @@ export const CarPictureContainer = styled.div`
   height: 260px;
   min-width: 200px;
   min-height: 150px;
+  @media (min-width: 1101px) and (max-width: 3000px) {
+    height: 650px;
+    width: 65%;
+    margin-top: -100px;
+  }
   @media (max-width: 1100px) {
     height: 240px;
     width: 65%;
@@ -147,29 +164,13 @@ const ContainerBase = styled.div`
   }
 `;
 
-export const GoBackButtonContainer = styled(ContainerBase)<{}>`
-  border: 1px solid #313136;
-  margin-right: auto;
-  width: 20%;
-  white-space: nowrap;
-  &:hover {
-    background-color: #313136;
-  }
-  @media (max-width: 600px) {
-    display: none;
-  }
-  @media (max-width: 700px) and (min-width: 601px) {
-    width: 50%;
-    margin-left: -75px;
-  }
-  @media (max-width: 800px) and (min-width: 701px) {
-    width: 35%;
-    margin-left: -15px;
-  }
-  @media (max-width: 1000ox) and (min-width: 801px) {
-    width: 30%;
-  }
+export const ButtonText = styled.p<{ color: string }>`
+  color: ${(props) => props.color};
+  margin: 0;
+  transition: 0.1s ease-in-out;
+  font-size: 0.9rem;
 `;
+
 export const BookButtonContainer = styled(ContainerBase)`
   background-color: #313136;
   margin-right: 5rem;
@@ -199,10 +200,51 @@ export const BookButtonContainer = styled(ContainerBase)`
     margin-right: 2.5rem;
     width: 18%;
   }
+  @media (min-width: 1101px) and (max-width: 3000px) {
+    ${ButtonText} {
+      font-size: 1.3rem;
+    }
+    margin-bottom: 100px;
+  }
 `;
-export const ButtonText = styled.p<{ color: string }>`
-  color: ${(props) => props.color};
-  margin: 0;
-  transition: 0.1s ease-in-out;
-  font-size: 0.9rem;
+
+export const GoBackButtonContainer = styled(ContainerBase)<{}>`
+  border: 1px solid #5d5d61;
+  border-radius: 35px;
+  margin-right: auto;
+  width: 20%;
+  white-space: nowrap;
+  svg {
+    width: 30px;
+    height: 30px;
+  }
+  &:hover {
+    background-color: #313136;
+    border: 1px solid #313136;
+    path {
+      color: white;
+    }
+  }
+  @media (max-width: 600px) {
+    display: none;
+  }
+  @media (max-width: 700px) and (min-width: 601px) {
+    width: 50%;
+    margin-left: -75px;
+  }
+  @media (max-width: 800px) and (min-width: 701px) {
+    width: 35%;
+    margin-left: -15px;
+  }
+  @media (max-width: 1000ox) and (min-width: 801px) {
+    width: 30%;
+  }
+  @media (min-width: 1101px) and (max-width: 3000px) {
+    width: 12.5%;
+    font-size: 1.5rem;
+    padding: 1.25rem 0.5rem;
+    ${ButtonText} {
+      font-size: 1.6rem;
+    }
+  }
 `;

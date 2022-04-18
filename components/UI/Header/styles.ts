@@ -19,11 +19,17 @@ export const HeaderTitle = styled.p`
   &:hover {
     cursor: pointer;
   }
+  @media (min-width: 1101px) and (max-width: 3000px) {
+    font-size: 2rem;
+  }
 `;
 
 export const HeaderTitleBold = styled.b`
   font-weight: 600;
   font-size: 1.5rem;
+  @media (min-width: 1101px) and (max-width: 3000px) {
+    font-size: 3rem;
+  }
 `;
 
 export const SearchBarContainer = styled.div`
@@ -36,6 +42,9 @@ export const SearchBarContainer = styled.div`
   border-radius: 18px;
   padding: 5px 10px 5px 2rem;
 
+  @media (min-width: 1101px) and (max-width: 3000px) {
+    width: 35%;
+  }
   @media (max-width: 1100px) {
     width: 50%;
   }
@@ -52,12 +61,19 @@ export const SearchFieldContainer = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
+
   svg:hover {
     cursor: pointer;
     path {
       transition: 0.1s ease;
       transform: scale(1.05);
       color: #7b89f4;
+    }
+  }
+  @media (min-width: 1101px) and (max-width: 3000px) {
+    svg {
+      width: 2rem;
+      height: 2rem;
     }
   }
 `;
@@ -67,6 +83,9 @@ export const SearchFieldLabel = styled.p`
   padding-bottom: 1px; // Compensate for the svg alignment issues
   margin: 2px;
 
+  @media (min-width: 1101px) and (max-width: 3000px) {
+    font-size: 1.35rem;
+  }
   @media (max-width: 1000px) {
     font-size: 0.9rem;
   }
@@ -87,27 +106,35 @@ export const SearchButton = styled(IoSearchSharp)`
     transition: 0.3s all ease-in-out;
     transform: rotate(360deg) scale(1.1);
   }
+  @media (min-width: 1101px) and (max-width: 3000px) {
+    width: 2rem;
+    height: 2rem;
+  }
   @media (max-width: 500px) {
     display: none;
   }
 `;
 
 export const ButtonContainer = styled.div`
+  display: flex;
   @media (max-width: 700px) {
     white-space: nowrap;
-    display: flex;
     justify-content: center;
   }
   @media (max-width: 400px) {
     flex-direction: column;
     margin: 5px;
   }
+  @media (min-width: 1101px) and (max-width: 3000px) {
+    width: 10%;
+    justify-content: space-between;
+  }
 `;
 
 export const Button = styled.button<{ border?: boolean }>`
   color: #7b89f4;
   padding: 0.5rem 0.8rem;
-  border-radius: 10px;
+  border-radius: 15px;
   border: ${(props) => (props.border ? '2px solid #7B89F4' : 'none')};
   font-weight: 600;
   font-size: 0.9rem;
@@ -117,6 +144,10 @@ export const Button = styled.button<{ border?: boolean }>`
     cursor: pointer;
     color: ${(props) => (props.border ? 'white' : '#7B89F4')};
     background-color: ${(props) => (props.border ? '#7B89F4' : 'transparent')};
+  }
+  @media (min-width: 1101px) and (max-width: 3000px) {
+    font-size: 1.5rem;
+    padding: 0.75rem 1.2rem;
   }
 `;
 

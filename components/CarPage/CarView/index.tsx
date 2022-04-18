@@ -95,8 +95,8 @@ export const CarView = (props: { selectedCar: Car }) => {
         </CarInformationHeader>
         <CarInformationBody>
           <GoBackButtonContainer onClick={() => router.push('/')}>
-            <BsArrowLeft />
-            <ButtonText color='#313136'>Back to catalog</ButtonText>
+            <BsArrowLeft color={'#5d5d61'} />
+            <ButtonText color='#5d5d61'>Back to catalog</ButtonText>
           </GoBackButtonContainer>
           <CarPictureContainer>
             <CarPicture
