@@ -1,5 +1,5 @@
 import { ErrorView } from '@components';
-import * as wipAnimation from '@animations/wip-animation';
+import * as wipAnimation from '@animations/wip-animation.json';
 const SignUpPage = () => {
   return (
     <ErrorView
