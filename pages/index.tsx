@@ -11,7 +11,7 @@ const Home: NextPage<{ cars: Car[]; error: boolean }> = (props: {
 }) => {
   let content;
   if (props.error && !props.cars) {
-    content = <ErrorView />;
+    content = <ErrorView title='Error' subtitle='Please try again later' />;
   } else {
     content = <HomeView cars={props.cars} />;
   }
