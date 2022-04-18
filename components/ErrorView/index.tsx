@@ -3,7 +3,7 @@ import Lottie, { Options } from 'react-lottie';
 
 import * as carAnimation from '@animations/car-animation.json';
 import { ErrorSubtitle, ErrorTitle, ErrorViewContainer } from './styles';
-export const ErrorView = () => {
+export const ErrorView = (props: { title: string; subtitle: string }) => {
   const isClient = typeof window !== 'undefined';
   const [screenSize, getDimension] = useState({
     dynamicWidth: isClient ? window.innerWidth : 800,
@@ -37,16 +37,14 @@ export const ErrorView = () => {
   const animationWidth = screenSize.dynamicWidth > 600 ? 400 : 300;
   return (
     <ErrorViewContainer>
-      <ErrorTitle>Sorry !</ErrorTitle>
+      <ErrorTitle>{props.title}</ErrorTitle>
       <Lottie
         isClickToPauseDisabled={true}
         options={defaultOptions}
         height={200}
         width={animationWidth}
       />
-      <ErrorSubtitle>
-        We couldn&apos;t load the data for this page
-      </ErrorSubtitle>
+      <ErrorSubtitle>{props.subtitle}</ErrorSubtitle>
     </ErrorViewContainer>
   );
 };

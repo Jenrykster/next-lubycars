@@ -45,6 +45,7 @@ const ColorInfo = (props: {
 export const CarView = (props: { selectedCar: Car }) => {
   const firstRun = useRef(true);
   const router = useRouter();
+  const [isLoadingImage, setIsLoadingImage] = useState(false);
   const [selectedColor, setSelectedColor] = useState(
     props.selectedCar?.colors[1]
   );
@@ -69,6 +70,7 @@ export const CarView = (props: { selectedCar: Car }) => {
       setIsTransitioning(false);
       setActualCarImage('/cars/' + selectedColor!.pics[1]);
     };
+    setIsLoadingImage(true);
     setIsTransitioning(true);
 
     setTimeout(changeImage, 300);
@@ -98,8 +100,10 @@ export const CarView = (props: { selectedCar: Car }) => {
           </GoBackButtonContainer>
           <CarPictureContainer>
             <CarPicture
+              onLoad={() => setIsLoadingImage(true)}
+              onLoadingComplete={() => setIsLoadingImage(false)}
               src={actualCarImage}
-              transitioning={isTransitioning}
+              transitioning={isTransitioning || isLoadingImage}
               layout='responsive'
               objectFit='contain'
               width={783}
