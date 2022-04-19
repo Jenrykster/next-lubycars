@@ -20,7 +20,7 @@ export const HeaderTitle = styled.p`
   &:hover {
     cursor: pointer;
   }
-  @media (min-width: 1101px) and (max-width: 3000px) {
+  @media (min-width: 1350px) and (max-width: 3000px) {
     font-size: 2rem;
   }
 `;
@@ -28,7 +28,7 @@ export const HeaderTitle = styled.p`
 export const HeaderTitleBold = styled.b`
   font-weight: 600;
   font-size: 1.5rem;
-  @media (min-width: 1101px) and (max-width: 3000px) {
+  @media (min-width: 1350px) and (max-width: 3000px) {
     font-size: 3rem;
   }
 `;
@@ -46,7 +46,7 @@ export const SearchBarContainer = styled.div`
   @media (min-width: 1901px) and (max-width: 3000px) {
     width: 35%;
   }
-  @media (min-width: 1101px) and (max-width: 1900px) {
+  @media (min-width: 1350px) and (max-width: 1900px) {
     width: 40%;
   }
   @media (max-width: 1100px) {
@@ -74,7 +74,7 @@ export const SearchFieldContainer = styled.div`
       color: #7b89f4;
     }
   }
-  @media (min-width: 1101px) and (max-width: 3000px) {
+  @media (min-width: 1350px) and (max-width: 3000px) {
     svg {
       width: 2rem;
       height: 2rem;
@@ -90,7 +90,7 @@ export const SearchFieldLabel = styled.p`
   @media (min-width: 1901px) and (max-width: 3000px) {
     font-size: 1.35rem;
   }
-  @media (min-width: 1101px) and (max-width: 1900px) {
+  @media (min-width: 1350px) and (max-width: 1900px) {
     font-size: 1rem;
   }
   @media (max-width: 1000px) {
@@ -113,7 +113,7 @@ export const SearchButton = styled(IoSearchSharp)`
     transition: 0.3s all ease-in-out;
     transform: rotate(360deg) scale(1.1);
   }
-  @media (min-width: 1101px) and (max-width: 3000px) {
+  @media (min-width: 1350px) and (max-width: 3000px) {
     width: 2.5rem;
     height: 2.5rem;
   }
@@ -132,7 +132,7 @@ export const ButtonContainer = styled.div`
     flex-direction: column;
     margin: 5px;
   }
-  @media (min-width: 1101px) and (max-width: 2000px) {
+  @media (min-width: 1350px) and (max-width: 2000px) {
     width: 15%;
     justify-content: space-between;
   }
@@ -156,7 +156,7 @@ export const Button = styled.button<{ border?: boolean }>`
     color: ${(props) => (props.border ? 'white' : '#7B89F4')};
     background-color: ${(props) => (props.border ? '#7B89F4' : 'transparent')};
   }
-  @media (min-width: 1101px) and (max-width: 3000px) {
+  @media (min-width: 1350px) and (max-width: 3000px) {
     font-size: 1.5rem;
     padding: 0.75rem 1.2rem;
   }

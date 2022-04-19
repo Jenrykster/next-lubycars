@@ -7,7 +7,7 @@ export const CarouselContainer = styled.div`
   width: 95%;
   height: 200px;
   user-select: none;
-  @media (min-width: 1101px) and (max-width: 3000px) {
+  @media (min-width: 1350px) and (max-width: 3000px) {
     width: 85%;
   }
   @media (max-width: 850px) {
@@ -57,7 +57,7 @@ export const CarouselImage = styled.img<{
     margin-left: auto;
     margin-right: auto;
   }
-  @media (min-width: 1101px) and (max-width: 3000px) {
+  @media (min-width: 1350px) and (max-width: 3000px) {
     width: 125%;
   }
 `;

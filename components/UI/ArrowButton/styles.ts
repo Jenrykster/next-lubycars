@@ -13,7 +13,7 @@ export const ArrowButtonContainer = styled.div<{ backgroundColor: string }>`
     -webkit-filter: brightness(70%);
     cursor: pointer;
   }
-  @media (min-width: 1101px) and (max-width: 3000px) {
+  @media (min-width: 1350px) and (max-width: 3000px) {
     padding: 1rem;
     border-radius: 50%;
     svg {
