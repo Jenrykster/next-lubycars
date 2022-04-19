@@ -8,6 +8,7 @@ export const HeaderContainer = styled.div`
   justify-content: space-around;
   box-shadow: 0px 10px 30px #0000001a;
   padding: 0.8rem 1.4rem;
+  white-space: nowrap;
   @media (max-width: 700px) {
     justify-content: space-between;
   }
@@ -42,8 +43,11 @@ export const SearchBarContainer = styled.div`
   border-radius: 18px;
   padding: 5px 10px 5px 2rem;
 
-  @media (min-width: 1101px) and (max-width: 3000px) {
+  @media (min-width: 1901px) and (max-width: 3000px) {
     width: 35%;
+  }
+  @media (min-width: 1101px) and (max-width: 1900px) {
+    width: 40%;
   }
   @media (max-width: 1100px) {
     width: 50%;
@@ -83,8 +87,11 @@ export const SearchFieldLabel = styled.p`
   padding-bottom: 1px; // Compensate for the svg alignment issues
   margin: 2px;
 
-  @media (min-width: 1101px) and (max-width: 3000px) {
+  @media (min-width: 1901px) and (max-width: 3000px) {
     font-size: 1.35rem;
+  }
+  @media (min-width: 1101px) and (max-width: 1900px) {
+    font-size: 1rem;
   }
   @media (max-width: 1000px) {
     font-size: 0.9rem;
@@ -107,8 +114,8 @@ export const SearchButton = styled(IoSearchSharp)`
     transform: rotate(360deg) scale(1.1);
   }
   @media (min-width: 1101px) and (max-width: 3000px) {
-    width: 2rem;
-    height: 2rem;
+    width: 2.5rem;
+    height: 2.5rem;
   }
   @media (max-width: 500px) {
     display: none;
@@ -125,7 +132,11 @@ export const ButtonContainer = styled.div`
     flex-direction: column;
     margin: 5px;
   }
-  @media (min-width: 1101px) and (max-width: 3000px) {
+  @media (min-width: 1101px) and (max-width: 2000px) {
+    width: 15%;
+    justify-content: space-between;
+  }
+  @media (min-width: 2001px) and (max-width: 3000px) {
     width: 10%;
     justify-content: space-between;
   }

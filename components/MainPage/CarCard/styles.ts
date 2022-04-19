@@ -21,6 +21,9 @@ export const TitleText = styled.p<{ size?: number }>`
   margin-top: auto;
   white-space: nowrap;
   text-transform: uppercase;
+  @media (min-width: 1500px) and (max-width: 3000px) {
+    font-size: ${(props) => (props.size ? props.size / 0.6 + 'rem' : '2rem')};
+  }
 `;
 export const PriceLabel = styled(TitleText)`
   text-transform: none;
@@ -30,6 +33,10 @@ export const TitleBold = styled.p<{ size?: number }>`
   font-weight: 800;
   color: #313136;
   font-size: ${(props) => (props.size ? props.size + 'rem' : 'initial')};
+  @media (min-width: 1500px) and (max-width: 3000px) {
+    font-size: ${(props) =>
+      props.size ? props.size / 0.7 + 'rem' : '1.25rem'};
+  }
 `;
 
 export const HiddenMessage = styled(TitleBold)`
@@ -41,10 +48,14 @@ export const HiddenMessage = styled(TitleBold)`
 `;
 
 export const ImageContainer = styled.div`
-  display: flex;
   align-items: center;
+  width: 100%;
   height: 100%;
   padding: 0.3rem;
+  @media (min-width: 1500px) and (max-width: 3000px) {
+    width: 80%;
+    height: auto;
+  }
 `;
 export const CarImage = styled(Image)`
   width: 95%;
@@ -81,6 +92,10 @@ export const CarCardContainer = styled.div`
   border-radius: 20px;
   padding: 0.9rem 1.15rem;
   transition: all 0.2s ease-in-out;
+  @media (min-width: 1500px) and (max-width: 3000px) {
+    width: 20vw;
+    height: auto;
+  }
   &:hover {
     cursor: pointer;
     background-color: transparent;
